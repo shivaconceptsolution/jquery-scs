@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js">
+
+    </script>
+
+    <script>
+      $(function(){
+       $('button').click(function(){
+            var num1 = $("#txtnum1").val();
+            var num2 = $("#txtnum2").val();
+            var num3 = parseInt(num1) + parseInt(num2);
+            $("#res").html(num3);
+
+
+       });
+
+       $(".hide1").click(function(){
+        $("#container").hide();
+       });
+       $(".show1").click(function(){
+        $("#container").show();
+       });
+       $(".tog").click(function(){
+        $("#container").fadeToggle(1000);
+       });
+      })
+    </script>
+</head>
+<body>
+        <div id="container">
+        <input type="text" id="txtnum1" placeholder="Enter First Number" />
+        <br><br>
+        <input type="text" id="txtnum2" placeholder="Enter Second Number" />
+        <br><br>
+        <button type="button">Add</button>
+        <div id="res"></div>
+       
+       </div>
+       <button type="button" class="hide1">Hide</button>
+       <button type="button" class="show1">Show</button>
+       <button type="button" class="tog">Toggle</button>
+
+</body>
+</html>

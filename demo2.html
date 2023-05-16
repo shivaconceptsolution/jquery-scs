@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js">
+
+    </script>
+    <style type="text/css">
+        .ram
+        {
+            background-color: brown;
+            width:200px;
+            height: 200px;
+        }
+    </style>
+    <script>
+        $(function(){
+         $('.btn1').click(function(){
+            $('div').addClass('ram');
+         });
+         $('.btn2').click(function(){
+            $('div').removeClass('ram');
+         });
+        })
+    </script>
+</head>
+<body>
+    <div></div>
+    <button class="btn1">Apply Effect</button>
+    <button class="btn2">Remove Effect</button>
+</body>
+</html>
